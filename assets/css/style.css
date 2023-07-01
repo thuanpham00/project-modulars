@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* common thành phần dùng chung */
+.container {
+    width: 1140px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --color1: #152427;
+    --color2: #575d5e;
+    --background: #143c3c;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 173px;
+    height: 57px;
+    border-radius: 40px;
+    border: 1.5px solid #143c3c;
+    background: var(--background);
+    line-height: 53px;
+    font-size: 1.8rem;
+    font-family: Public Sans;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.section-heading {
+
+}
+
+/* header */
+.header {
+    padding: 28px 0 13px;
+    position: sticky;
+    z-index: 1;
+    top: -15px;
+}
+
+.header__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.header__inner::after {
+    position: absolute;
+    bottom: -14px;
+    content: "";
+    border-bottom: 1px solid #575d5e;
+}
+
+.navbar__list {
+    margin-left: 387px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-item {
+    padding: 4px 19px;
+}
+
+.navbar__link {
+    color: var(--color2);
+    font-size: 1.8rem;
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.header__btn {
+    display: block;
+    margin-left: 88px;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+    position: relative;
+    color: var(--color1);
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.navbar__link--active::after {
+    position: absolute;
+    display: block;
+    bottom: -32px;
+    left: 0;
+    content: "";
+    width: 16px;
+    height: 2px;
+    background: var(--background);
+}
