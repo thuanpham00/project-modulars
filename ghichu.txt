@@ -1,0 +1,5 @@
+tự build
+
+sử dụng cấu trúc bem đặt tên class hợp lý
+sử dụng thẻ semantic hợp lý hơn
+sử dụng css grid
