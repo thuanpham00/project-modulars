@@ -11,6 +11,10 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+html, body {
+    scroll-behavior: smooth;
+}
+
 /* common thành phần dùng chung */
 .container {
     width: 1140px;
@@ -956,7 +960,8 @@ background-position: 0 0: Đặt vị trí bắt đầu của hình ảnh gradie
 }
 
 .footer-item__link:hover {
-    text-decoration: underline;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
 }
 
 .footer-column {
