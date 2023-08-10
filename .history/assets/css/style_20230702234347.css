@@ -899,7 +899,6 @@ background-position: 0 0: Đặt vị trí bắt đầu của hình ảnh gradie
 }
 
 .footer-form__input {
-    outline: none;
     border: none;
     background: transparent;
     color: #6a8383;
